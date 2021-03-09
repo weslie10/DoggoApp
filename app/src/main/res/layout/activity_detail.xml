@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profile_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_dog_detail"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginRight="16dp"
+                android:background="@android:color/white"
+                tools:src="@drawable/shiba_inu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Breed Group: " />
+                    <TextView
+                        android:id="@+id/dog_breed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Herding Dogs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Height: " />
+                    <TextView
+                        android:id="@+id/dog_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="22 to 26 inches tall at the shoulder" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Weight: " />
+                    <TextView
+                        android:id="@+id/dog_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="40 to 80 pounds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Life Span: " />
+                    <TextView
+                        android:id="@+id/dog_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="12 to 14 years" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/holo_orange_dark"/>
+
+        <TextView
+            android:id="@+id/detail_dog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="asdf" />
+    </LinearLayout>
+</ScrollView>
